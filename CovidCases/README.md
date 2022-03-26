@@ -6,6 +6,7 @@
 
 **CovidCases** is a Swift App that shows the implementation of:
 - API call and Networking
+- MVC Pattern
 - AutoLayout
 - Delegates and Protocols
 ## Screenshots:
