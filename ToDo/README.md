@@ -7,6 +7,7 @@
 **ToDo** is a Swift App that shows the implementation of:
 - CoreData (CRUD)
 - Custom TableView
+- MVC Pattern
 - AutoLayout
 - Delegates and Protocols
 
