@@ -10,6 +10,7 @@
 
 **ToDo** is a Swift App that shows the implementation of:
 - CoreData (CRUD)
+- MVC Pattern
 - Custom TableView
 - AutoLayout
 - Delegates and Protocols
@@ -28,6 +29,7 @@
 **TicTacToe** is a Swift App that shows the implementation of:
 - Sound integration
 - Haptic feedback integration
+- MVC Pattern
 - AutoLayout
 ## Screenshots:
 ![](./TicTacToe/images/TTT_all.png)
@@ -42,6 +44,7 @@
 
 **CryptoRates** is a Swift App that shows the implementation of:
 - API call and Networking
+- MVC Pattern
 - AutoLayout
 - Delegates and Protocols
 ## Screenshots:
@@ -57,6 +60,7 @@
 
 **CovidCases** is a Swift App that shows the implementation of:
 - API call and Networking
+- MVC Pattern
 - AutoLayout
 - Delegates and Protocols
 ## Screenshots:
