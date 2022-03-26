@@ -7,6 +7,7 @@
 **CryptoRates** is a Swift App that shows the implementation of:
 - API call and Networking
 - AutoLayout
+- MVC Pattern
 - Delegates and Protocols
 ## Screenshots:
 ![](./images/CR_all.png)
