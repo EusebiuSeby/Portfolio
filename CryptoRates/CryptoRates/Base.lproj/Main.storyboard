@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iHX-OH-mMv">
+                                <rect key="frame" x="0.0" y="414" width="390" height="216"/>
+                                <subviews>
+                                    <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eR6-Rb-I3B">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="216"/>
+                                        <color key="tintColor" name="Color3"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="iyb-rA-5ez"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="mRI-Fr-hY0"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-af-9II">
+                                        <rect key="frame" x="195" y="0.0" width="195" height="216"/>
+                                        <color key="tintColor" name="Color3"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="IJI-IV-isn"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="uw8-IE-Cey"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oj-Lj-rfn">
+                                <rect key="frame" x="126.33333333333333" y="684.33333333333337" width="137.33333333333337" height="75.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done" cornerStyle="large">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.78040636825127274" green="0.76468546817066918" blue="0.85621781782670459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="45"/>
+                                    <color key="baseForegroundColor" name="Color1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJN-vQ-csE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="O7g-zD-gdd">
+                                <rect key="frame" x="147.66666666666666" y="178.66666666666663" width="95" height="207"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSo-Ne-vFS">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="59"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="43"/>
+                                        <color key="textColor" name="Color3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5A-fj-dyY">
+                                        <rect key="frame" x="0.0" y="74" width="95" height="59"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="43"/>
+                                        <color key="textColor" name="Color1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syE-NR-TTi">
+                                        <rect key="frame" x="0.0" y="148.00000000000003" width="95" height="59"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="43"/>
+                                        <color key="textColor" name="Color3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="syE-NR-TTi" firstAttribute="centerX" secondItem="O7g-zD-gdd" secondAttribute="centerX" id="3zy-Ok-3Qh"/>
+                                    <constraint firstItem="N5A-fj-dyY" firstAttribute="centerX" secondItem="O7g-zD-gdd" secondAttribute="centerX" id="8Dy-ix-tyY"/>
+                                    <constraint firstItem="lSo-Ne-vFS" firstAttribute="centerX" secondItem="O7g-zD-gdd" secondAttribute="centerX" id="fmI-4e-D1q"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr3-L1-gdW">
+                                <rect key="frame" x="170" y="54" width="205" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="⇧ Popular Pairs">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="Color1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popularPairsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pB0-Fe-xpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-Nk-rdX">
+                                <rect key="frame" x="20" y="57" width="65" height="40.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="capsule.righthalf.filled" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22"/>
+                                    <color key="baseForegroundColor" name="Color1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ChangeAppereance:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jmo-en-tn3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Color2"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nr3-L1-gdW" secondAttribute="trailing" constant="15" id="0GI-IS-OUB"/>
+                            <constraint firstItem="gxT-Nk-rdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2XG-Ve-xpj"/>
+                            <constraint firstItem="4oj-Lj-rfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3aA-bB-bDU"/>
+                            <constraint firstItem="O7g-zD-gdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="3ux-vi-w6Y"/>
+                            <constraint firstItem="O7g-zD-gdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Bk-d8-YuU"/>
+                            <constraint firstItem="iHX-OH-mMv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="9Wo-Vv-u5S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4oj-Lj-rfn" secondAttribute="bottom" constant="50" id="A0F-ga-24B"/>
+                            <constraint firstItem="nr3-L1-gdW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="EUZ-DG-cHd"/>
+                            <constraint firstItem="iHX-OH-mMv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FQv-m1-j5o"/>
+                            <constraint firstItem="nr3-L1-gdW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="FV1-R2-quV"/>
+                            <constraint firstAttribute="trailing" secondItem="iHX-OH-mMv" secondAttribute="trailing" id="Rux-oI-SwO"/>
+                            <constraint firstItem="gxT-Nk-rdX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="peD-Um-KhG"/>
+                            <constraint firstItem="iHX-OH-mMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNP-DN-bEb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cb7-ij-kSF"/>
+                    <connections>
+                        <outlet property="cryptoLabel" destination="lSo-Ne-vFS" id="Eur-6n-VSp"/>
+                        <outlet property="currencyLabel" destination="syE-NR-TTi" id="yCn-Yv-ZMy"/>
+                        <outlet property="equalLabel" destination="N5A-fj-dyY" id="OTF-N1-lF1"/>
+                        <outlet property="themeButton" destination="gxT-Nk-rdX" id="TUx-SK-KCE"/>
+                        <segue destination="Aom-XI-6X6" kind="presentation" identifier="mama" id="gAG-cZ-X9l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="137"/>
+        </scene>
+        <!--Pairs View Controller-->
+        <scene sceneID="1D3-90-YnS">
+            <objects>
+                <viewController id="Aom-XI-6X6" customClass="PairsViewController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2f-9D-i3x">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-eh-Ear">
+                                <rect key="frame" x="83.666666666666686" y="143.66666666666663" width="223" height="503"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH3-CB-d1p">
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="BTC / USD">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="HRR-OU-7E2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-Rm-1nx">
+                                        <rect key="frame" x="0.0" y="88" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="BNB / EUR">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="FRn-mf-WQo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-6Q-bqM">
+                                        <rect key="frame" x="0.0" y="176.00000000000003" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="DOGE / USD">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="7nE-q1-y7Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VB-qE-uEA">
+                                        <rect key="frame" x="0.0" y="264" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="EGLD / RON">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="cdn-2G-B0R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7y-Dp-CNe">
+                                        <rect key="frame" x="0.0" y="352" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="EGLD / USD">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="Y1x-SD-H0C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cn-X4-rep">
+                                        <rect key="frame" x="0.0" y="440" width="223" height="63"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="XRP / EUR">
+                                            <color key="titleColor" name="Color1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="Aom-XI-6X6" eventType="touchUpInside" id="0Ka-wy-pmZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tsd-6Q-bqM" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="7e7-es-eG2"/>
+                                    <constraint firstItem="JH3-CB-d1p" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="D3z-PT-7P0"/>
+                                    <constraint firstItem="sSa-Rm-1nx" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="HxR-Jc-vdk"/>
+                                    <constraint firstItem="3cn-X4-rep" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="h6Z-EA-opd"/>
+                                    <constraint firstItem="c7y-Dp-CNe" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="hmd-3S-TJG"/>
+                                    <constraint firstItem="6VB-qE-uEA" firstAttribute="centerX" secondItem="eBR-eh-Ear" secondAttribute="centerX" id="rLh-wp-eIA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZQt-Po-07N"/>
+                        <color key="backgroundColor" name="Color3"/>
+                        <constraints>
+                            <constraint firstItem="eBR-eh-Ear" firstAttribute="centerX" secondItem="H2f-9D-i3x" secondAttribute="centerX" id="0oW-QN-3hf"/>
+                            <constraint firstItem="eBR-eh-Ear" firstAttribute="centerY" secondItem="H2f-9D-i3x" secondAttribute="centerY" id="vCu-dS-LAB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCc-F2-0lR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="capsule.righthalf.filled" catalog="system" width="128" height="94"/>
+        <namedColor name="Color1">
+            <color red="0.92500001192092896" green="0.14499999582767487" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color2">
+            <color red="0.98000001907348633" green="0.92900002002716064" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color3">
+            <color red="0.16099999845027924" green="0.17299999296665192" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
