@@ -9,4 +9,4 @@
 - AutoLayout
 - Delegates and Protocols
 ## Screenshots:
-![](./CovidCases/images/CC_all.png)
+![](./images/CC_all.png)
