@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidCases" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid 19 INFO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fj-Me-kv4">
+                                <rect key="frame" x="78" y="144" width="258" height="51"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.62352941176470589" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See the number of total cases by country " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9M-2b-cfX">
+                                <rect key="frame" x="20" y="372" width="374" height="152"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.62352941179999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-pJ-qWQ">
+                                <rect key="frame" x="30" y="245" width="354" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B66-hV-RG3">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="40"/>
+                                        <color key="backgroundColor" red="0.12941176469999999" green="0.62352941179999999" blue="0.58039215690000001" alpha="0.33557816057015727" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.90980392160000001" green="0.90980392160000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vQ-A1-hFY">
+                                        <rect key="frame" x="314" y="0.5" width="40" height="38.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Xwa-VM-3ht"/>
+                                            <constraint firstAttribute="height" constant="40" id="qRj-R9-Dw2"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.12941176469999999" green="0.62352941179999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" backgroundImage="magnifyingglass" catalog="system">
+                                            <color key="titleColor" red="0.054371081289999998" green="0.20662629599999999" blue="0.042202390729999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7V-AL-XKW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-bI-Vy0">
+                                <rect key="frame" x="40" y="612" width="334" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="zOE-Gb-wnf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxI-bI-Vy0" secondAttribute="bottom" constant="50" id="3pz-3g-Ffg"/>
+                            <constraint firstItem="wxI-bI-Vy0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5AO-2c-rza"/>
+                            <constraint firstItem="j9M-2b-cfX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Uc-sb-aAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hgk-pJ-qWQ" secondAttribute="trailing" constant="30" id="9Dd-dx-3hr"/>
+                            <constraint firstItem="hgk-pJ-qWQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OuA-Dp-Cnc"/>
+                            <constraint firstItem="1Fj-Me-kv4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Ttn-vE-oBv"/>
+                            <constraint firstItem="hgk-pJ-qWQ" firstAttribute="top" secondItem="1Fj-Me-kv4" secondAttribute="bottom" constant="50" id="daJ-gR-tgf"/>
+                            <constraint firstItem="wxI-bI-Vy0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="dfF-Do-TqD"/>
+                            <constraint firstItem="j9M-2b-cfX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eMh-10-Guz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9M-2b-cfX" secondAttribute="trailing" constant="20" id="f56-kc-TIf"/>
+                            <constraint firstItem="1Fj-Me-kv4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fkh-2b-bB7"/>
+                            <constraint firstItem="hgk-pJ-qWQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xGm-h9-WOz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryTextField" destination="B66-hV-RG3" id="YMs-97-kFH"/>
+                        <segue destination="Lju-gr-5ph" kind="presentation" identifier="mama" id="eCh-xr-UKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="133"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="R2g-XK-QWg">
+            <objects>
+                <viewController id="Lju-gr-5ph" customClass="ResultViewController" customModule="CovidCases" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Efo-qn-OjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTO-ME-Lzr" userLabel="There are">
+                                <rect key="frame" x="119.5" y="319.5" width="175.5" height="51"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.96078431369999995" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxU-g9-CTf">
+                                <rect key="frame" x="20" y="390.5" width="374" height="61.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="45"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.58741018672054801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cases in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La3-F9-qHl">
+                                <rect key="frame" x="140" y="472" width="134" height="51"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.96078431369999995" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australia" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXQ-At-nVN">
+                                <rect key="frame" x="131" y="543" width="152.5" height="51"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🦠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-l1-nEn">
+                                <rect key="frame" x="153" y="100" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s5T-nF-ucp"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.62352941179999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uxU-g9-CTf" firstAttribute="centerY" secondItem="Efo-qn-OjZ" secondAttribute="centerY" id="6Uh-Os-4YX"/>
+                            <constraint firstItem="tTO-ME-Lzr" firstAttribute="centerX" secondItem="Efo-qn-OjZ" secondAttribute="centerX" id="D1d-VR-wLM"/>
+                            <constraint firstItem="uxU-g9-CTf" firstAttribute="leading" secondItem="s5T-nF-ucp" secondAttribute="leading" constant="20" id="ET3-7e-Prp"/>
+                            <constraint firstItem="pvI-l1-nEn" firstAttribute="top" secondItem="s5T-nF-ucp" secondAttribute="top" constant="100" id="ExV-Ay-t5e"/>
+                            <constraint firstItem="s5T-nF-ucp" firstAttribute="trailing" secondItem="uxU-g9-CTf" secondAttribute="trailing" constant="20" id="FDT-aB-OOY"/>
+                            <constraint firstItem="QXQ-At-nVN" firstAttribute="top" secondItem="La3-F9-qHl" secondAttribute="bottom" constant="20" id="GFP-qV-jHS"/>
+                            <constraint firstItem="uxU-g9-CTf" firstAttribute="top" secondItem="tTO-ME-Lzr" secondAttribute="bottom" constant="20" id="b9i-8Z-PHA"/>
+                            <constraint firstItem="QXQ-At-nVN" firstAttribute="centerX" secondItem="Efo-qn-OjZ" secondAttribute="centerX" id="fnq-Qt-g4Q"/>
+                            <constraint firstItem="pvI-l1-nEn" firstAttribute="centerX" secondItem="Efo-qn-OjZ" secondAttribute="centerX" id="kZ3-2j-R51"/>
+                            <constraint firstItem="La3-F9-qHl" firstAttribute="top" secondItem="uxU-g9-CTf" secondAttribute="bottom" constant="20" id="mUo-f1-0jm"/>
+                            <constraint firstItem="La3-F9-qHl" firstAttribute="centerX" secondItem="Efo-qn-OjZ" secondAttribute="centerX" id="znO-HR-phl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryName" destination="QXQ-At-nVN" id="NJO-G5-vIX"/>
+                        <outlet property="numberCases" destination="uxU-g9-CTf" id="aAc-Cn-BVy"/>
+                        <outlet property="outlet1" destination="tTO-ME-Lzr" id="n4M-vo-KnL"/>
+                        <outlet property="outlet3" destination="La3-F9-qHl" id="51W-MR-8AY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7k-CL-9ty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="map" width="575" height="332"/>
+    </resources>
+</document>
