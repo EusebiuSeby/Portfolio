@@ -16,8 +16,9 @@
 
 ## Screenshots:
 ![](./ToDo/images/TD_all.png)
-
-
+#
+#
+#
 # 2. TicTacToe App
 
 ![](./TicTacToe/images/TTT_logo.png)
@@ -30,7 +31,9 @@
 - AutoLayout
 ## Screenshots:
 ![](./TicTacToe/images/TTT_all.png)
-
+#
+#
+#
 # 3. CryptoRates App
 
 ![](./CryptoRates/images/CR_logo.png)
@@ -43,7 +46,9 @@
 - Delegates and Protocols
 ## Screenshots:
 ![](./CryptoRates/images/CR_all.png)
-
+#
+#
+#
 # 4. CovidCases App
 
 ![](./CovidCases/images/CC_logo.png)
