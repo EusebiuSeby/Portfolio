@@ -7,6 +7,7 @@
 **TicTacToe** is a Swift App that shows the implementation of:
 - Sound integration
 - Haptic feedback integration
+- MVC Pattern
 - AutoLayout
 ## Screenshots:
 ![](./images/TTT_all.png)
