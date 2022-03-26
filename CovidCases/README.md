@@ -1,6 +1,6 @@
 # CovidCases App
 
-![](./CovidCases/images/CC_logo.png)
+![](./images/CC_logo.png)
 ## About:
 **CovidCases** is an app that helps you track the number of COVID-19 cases in each country.
 
