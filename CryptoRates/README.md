@@ -1,4 +1,4 @@
-# CryptoRates App
+# CryptoRates
 
 ![](./images/CR_logo.png)
 ## About:
