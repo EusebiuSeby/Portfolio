@@ -1,4 +1,4 @@
-# This is my porfolio representing my iOS journey so far.
+# These are the first apps that started my iOS journey.
 © Pudilic Eusebiu - iOS Developer
 
 
